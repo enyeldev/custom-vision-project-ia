@@ -95,6 +95,7 @@ export const useUpload = () => {
       toast.error("La imagen no concuerda con el tipo de calzado seleccioando");
       resetStates();
     } catch (error) {
+      toast.error("Ocurrio un fallo con el servicio de Azure.");
       console.log(error);
     }
   };
